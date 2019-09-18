@@ -8,7 +8,7 @@ public enum Category {
     MEAT("Viande"),
     POULTRY("Volaille"),
     FISH("Poisson"),
-    VEGGIE("Végé")
+    VEGGIE("Végé");
 
     /**
      * Empty constructor
