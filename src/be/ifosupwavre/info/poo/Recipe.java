@@ -9,9 +9,9 @@ public class Recipe {
     private Difficulty difficulty;
     private int time;
     private int expDay;
-    private Map<String, Quantity> ingredients;
+    private Ingredient[] ingredients;
 
-    public Recipe(String title, String subtitle, Category category, Difficulty difficulty, int time, int expDay, Map<String, Quantity> ingredients) {
+    public Recipe(String title, String subtitle, Category category, Difficulty difficulty, int time, int expDay, Ingredient[] ingredients) {
         this.title = title;
         this.subtitle = subtitle;
         this.category = category;
@@ -69,11 +69,11 @@ public class Recipe {
         this.expDay = expDay;
     }
 
-    public Map<String, Quantity> getIngredients() {
+    public Ingredient[] getIngredients() {
         return ingredients;
     }
 
-    private void setIngredients(Map<String, Quantity> ingredients) {
+    private void setIngredients(Ingredient[] ingredients) {
         this.ingredients = ingredients;
     }
 }
