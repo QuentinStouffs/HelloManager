@@ -1,4 +1,4 @@
-package be.ifosupwavre.info.poo;
+package be.ifosupwavre.info.poo.pojo;
 
 
 /**

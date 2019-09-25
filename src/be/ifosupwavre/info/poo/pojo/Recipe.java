@@ -1,6 +1,4 @@
-package be.ifosupwavre.info.poo;
-
-import java.util.Map;
+package be.ifosupwavre.info.poo.pojo;
 
 public class Recipe {
     private String title;
@@ -11,14 +9,13 @@ public class Recipe {
     private int expDay;
     private Ingredient[] ingredients;
 
-    public Recipe(String title, String subtitle, Category category, Difficulty difficulty, int time, int expDay, Ingredient[] ingredients) {
+    public Recipe(String title) {
         this.title = title;
-        this.subtitle = subtitle;
-        this.category = category;
-        this.difficulty = difficulty;
-        this.time = time;
-        this.expDay = expDay;
-        this.ingredients = ingredients;
+    }
+
+    @Override
+    public String toString() {
+        return title + " " + subtitle;
     }
 
     public String getTitle() {
