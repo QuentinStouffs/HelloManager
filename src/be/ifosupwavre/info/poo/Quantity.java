@@ -5,6 +5,7 @@ import java.lang.reflect.Constructor;
 public class Quantity {
 
     private float qty;
+
     private enum Unit{
         GRAMS("Grammes"),
         MILLILITERS("Millilitres"),
@@ -23,4 +24,7 @@ public class Quantity {
         this.qty = qty;
     }
 
+    public Quantity(float qty) {
+        this.qty = qty;
+    }
 }
